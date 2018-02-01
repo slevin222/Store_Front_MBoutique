@@ -1,3 +1,8 @@
+p{
+    margin:0;
+    padding-left:3%;
+}
+
 .welcomeImg{
     margin: 1% 0 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -6,6 +11,8 @@
 
 .macarons{
     margin-top: 6%;
+   
+ 
     
 }
 
@@ -54,11 +61,6 @@ h4{
 
 #sunday{
     background-color: #c39003;
-}
-
-p{
-    margin:0;
-    padding-left:3%;
 }
 
 .middleText{
