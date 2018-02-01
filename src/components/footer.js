@@ -20,8 +20,8 @@ export default props => {
                     <p className="copyR">COPYRIGHT @ 2017 MBOUTIQUE. ALL RIGHTS RESERVED</p>
                 </div>
                 <div className="col l3 s12 footerRight">
-                    <img src={facebook} className="facebookImg" />
                     <img src={twitter} className="twitterImg" />
+                    <img src={facebook} className="facebookImg" />
                     <p>Follow us</p>
                 </div>
             </div>
