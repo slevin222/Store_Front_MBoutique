@@ -1,8 +1,12 @@
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
+import Header from './header';
+import logo from '../assets/images/logo.png';
+
 
 const App = () => (
-    <div>
-        <h1>MBoutique Home Page - Coming Soon!</h1>
+    <div className="container">
+        <Header />
     </div>
 );
 
