@@ -1,0 +1,102 @@
+.welcomeImg{
+    margin: 1% 0 0 .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.macarons{
+    margin-top: 8%;
+    
+}
+
+h4{
+    font-size: 3vmin;
+    font-weight: bold;
+}
+.days{
+    display: flex;
+    height: 25vh;
+    
+}
+.monday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mtop{
+    margin-top:7%;
+    height: 45%;
+    width: 100%;
+}
+
+.mmiddle{
+    height: 25%;
+
+
+}
+
+.mbottom{
+    height:25%;
+    background-color: #824603;
+
+
+}
+
+.tuesday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wednesday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thursday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+}
+.friday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.saturday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sunday{
+    width: 13.3%;
+    height: 90%;
+    background-color:#fffabe;
+    margin: 0 .5% 2% .5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p{
+    margin:0;
+    padding-left:3%;
+}
+.middleText{
+    padding: 0;
+}
+.chocolate,
+.coconut{
+    float:right;
+    margin-right:7%;
+}

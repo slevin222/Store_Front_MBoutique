@@ -1,0 +1,13 @@
+.copyR{
+
+    font-size: 9px;
+}
+.footerMiddle{
+    text-align: center;
+}
+.page-footer{
+    height: 20%;
+    padding: 0;
+    background-color:#df5277;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
