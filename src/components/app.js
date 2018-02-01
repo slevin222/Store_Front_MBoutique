@@ -1,8 +1,12 @@
 import React from 'react';
+import Home from './home';
+import Footer from './footer';
+import logo from '../assets/images/logo.png';
+
 
 const App = () => (
-    <div>
-        <h1>MBoutique Home Page - Coming Soon!</h1>
+    <div className="container">
+        <Home />
     </div>
 );
 
