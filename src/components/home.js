@@ -4,6 +4,18 @@ import welcome from '../assets/images/welcome-image.png';
 import macarons from '../assets/images/macarons-image.png';
 import chocolate from '../assets/images/chocolate.png';
 import coconut from '../assets/images/coconut.png';
+import violetcassis from '../assets/images/violet-cassis.png';
+import vanilla from '../assets/images/vanilla.png';
+import greentea from '../assets/images/green-tea.png';
+import passionfruit from '../assets/images/passion-fruit.png';
+import coffee from '../assets/images/coffee.png';
+import pistachio from '../assets/images/pistachio.png';
+import raspbery from '../assets/images/raspbery.png';
+import lemon from '../assets/images/lemon.png';
+import rose from '../assets/images/rose.png';
+import tiffanyblue from '../assets/images/tiffany-blue.png';
+import caramel from '../assets/images/caramel.png';
+import almond from '../assets/images/almond.png';
 import Header from './header';
 import Footer from './footer';
 
@@ -11,7 +23,9 @@ export default props => {
     return (
         <div>
             <Header />
-            <img src={welcome} className="welcomeImg col s12" />
+            <div className="welcomeImage col lg12">
+                <img src={welcome} className="welcomeImg col s12" />
+            </div>
             <div className="row">
                 <div className="macarons col s3">
                     <img src={macarons} />
@@ -36,7 +50,6 @@ export default props => {
                     <div className="mmiddle">
                         <img src={chocolate} className="chocolate" />
                         <p>chocolate</p>
-
                     </div>
                     <div className="mbottom">
                         <img src={coconut} className="coconut" />
@@ -45,8 +58,32 @@ export default props => {
                     </div>
                 </div>
                 <div className="tuesday">
+                    <div className="ttop">
+                        <p>Tuesday</p>
+                        <p>15:00 - 16:00</p>
+                    </div>
+                    <div className="tmiddle">
+                        <img src={violetcassis} className="violetcassis" />
+                        <p>voilet cassis</p>
+                    </div>
+                    <div className="tbottom">
+                        <img src={greentea} className="greentea" />
+                        <p>green tea</p>
+                    </div>
                 </div>
                 <div className="wednesday">
+                    <div className="wtop">
+                        <p>Wednesday</p>
+                        <p>9:00 - 10:00</p>
+                    </div>
+                    <div className="wmiddle">
+                        <img src={passionfruit} className="passionfruit" />
+                        <p>passion fruit</p>
+                    </div>
+                    <div className="wbottom">
+                        <img src={vanilla} className="vanilla" />
+                        <p>vanilla</p>
+                    </div>
                 </div>
                 <dic className="thursday">
                 </dic>
