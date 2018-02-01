@@ -18,7 +18,7 @@ h4{
     height: 25vh;
     
 }
-.monday{
+.everyday{
     width: 13.3%;
     height: 90%;
     background-color:#fffabe;
@@ -26,78 +26,46 @@ h4{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mtop{
+.daystop{
     margin-top:7%;
     height: 45%;
     width: 100%;
 }
 
-.mmiddle{
+.daysmiddle{
     height: 25%;
-
-
 }
 
-.mbottom{
+.daysbottom{
     height:25%;
+}
+
+#monday{
     background-color: #824603;
-
-
 }
 
-.tuesday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#wednesday{
+    background-color: #df5277;
 }
-.wednesday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#friday{
+    background-color: #a2304e;
 }
-.thursday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    
+
+#sunday{
+    background-color: #c39003;
 }
-.friday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.saturday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.sunday{
-    width: 13.3%;
-    height: 90%;
-    background-color:#fffabe;
-    margin: 0 .5% 2% .5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 p{
     margin:0;
     padding-left:3%;
 }
+
 .middleText{
     padding: 0;
 }
-.chocolate,
-.coconut{
+
+.smallMacaronImg{
     float:right;
     margin-right:7%;
 }

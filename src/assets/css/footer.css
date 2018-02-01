@@ -5,9 +5,34 @@
 .footerMiddle{
     text-align: center;
 }
+.footerLeft{
+    text-align:center;
+}
+.footerRight{
+    text-align:right;
+}
 .page-footer{
     height: 20%;
     padding: 0;
     background-color:#df5277;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footerRow{
+    padding-top: 1%;
+}
+p{
+    margin:0;
+}
+.mailImg{
+    float:left;
+}
+.facebookImg{
+    float:right;
+}
+.twitterImg{
+    float:right;
+}
+.phoneImg{
+    float:left;
 }
