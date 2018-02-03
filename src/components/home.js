@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../assets/css/home.css';
 import welcome from '../assets/images/welcome-image.png';
 import macarons from '../assets/images/macarons-image.png';
@@ -23,6 +24,7 @@ export default props => {
     return (
         <div>
             <Header />
+            {/* <Route exact path="/" component={Header} /> */}
             <div className="welcomeImage col lg12">
                 <img src={welcome} className="welcomeImg col s12" />
             </div>
