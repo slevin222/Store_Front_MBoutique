@@ -1,0 +1,17 @@
+.giftsPartiesImg{
+    margin: 1% 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+.giftsText{
+    margin: 5% 0 0 5%;
+
+}
+.giftsTextBottom{
+    margin: 5% 0 5% 5%;
+}
+    
+.pGiftsText{
+    padding: 0;
+}

@@ -1,0 +1,31 @@
+
+
+
+.ourMacaronsImg{
+    margin: 1% 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+/* .imgTwo{
+    float: right;
+} */
+.classics{
+margin: 5% 0 0 5%;
+}
+
+.macaronText{
+margin: 5% 0 0 5%;
+}
+
+.pText{
+    padding: 0;
+}
+
+#macaronslist{
+    list-style-type: disc;
+}
+
+.bottomP{
+    margin: 0 0 5% 5%;
+   
+}

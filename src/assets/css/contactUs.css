@@ -1,0 +1,15 @@
+.contactImg{
+    margin: 1% 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+.contactText{
+    margin: 5% 0 0 5%;
+
+}
+
+    
+.pContactText{
+    padding: 0;
+}
