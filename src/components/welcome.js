@@ -16,8 +16,8 @@ import rose from '../assets/images/rose.png';
 import tiffanyblue from '../assets/images/tiffany-blue.png';
 import caramel from '../assets/images/caramel.png';
 import almond from '../assets/images/almond.png';
-import Header from './header';
-import Footer from './footer';
+// import Header from './header';
+// import Footer from './footer';
 
 
 
