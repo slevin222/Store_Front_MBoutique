@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/giftsParties.css';
 import giftsPartiesImage from '../assets/images/gifts-parties-image.png';
+import giftsPartiesBackground from '../assets/images/gifts_parties_background.png';
 
 export default props => {
     return (
@@ -25,7 +26,7 @@ export default props => {
                     <li>gift box of 6 macarons in violet or silver - $120</li>
                 </ul>
             </div>
-            <div className="giftsTextBottom">
+            <div className="giftsTextBottom" style={{ backgroundImage: "url(" + giftsPartiesBackground + ")" }}>
                 <h4>Party Tower</h4>
                 <p className="pGiftsText">Our 5-tiered party tower becomes the centerpiece of any special event or private celebration, elegantly presenting your unique selection of sixty macarons</p>
                 <ul>

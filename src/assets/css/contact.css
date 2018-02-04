@@ -13,3 +13,7 @@
 .pContactText{
     padding: 0;
 }
+
+.middleContact{
+    display: flex;
+}
