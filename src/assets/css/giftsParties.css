@@ -10,8 +10,19 @@
 }
 .giftsTextBottom{
     margin: 5% 0 5% 5%;
+    height: 67vh;
+    width: 75vw;
+
 }
     
 .pGiftsText{
     padding: 0;
+    margin-left: 10%;
+}
+.giftsTextBottom{
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.partyT{
+    margin: 5% 0 0 10%;
 }

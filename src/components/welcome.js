@@ -26,14 +26,14 @@ export default props => {
     return (
 
         <div>
-            <div className="welcomeImage col lg12">
+            <div className="welcomeImage col l12">
                 <img src={welcome} className="welcomeImg col s12" />
             </div>
             <div className="row">
-                <div className="macarons col s3">
-                    <img src={macarons} />
+                <div className="macarons col l3">
+                    <img src={macarons} className="hide-on-med-and-down" />
                 </div>
-                <div className="textcol col s9">
+                <div className="textcol col l9 col s12">
                     <h4>Welcome to MBoutique!</h4>
                     <p className="middleText">We're a home-based baking business that specializes in the making of French     macarons, a gluten free
         pastry item made from ground almonds. Our business began at the West Reading Farmers Market in 2011.
