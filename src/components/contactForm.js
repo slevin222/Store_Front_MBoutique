@@ -1,44 +1,64 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../assets/css/contactForm.css';
+import Field from './field.js';
 
-export default props => {
-    return (
-        <div className="col s12">
-            <h4>Contact Form</h4>
-            <input type="text" input name="name" placeholder="Name" />
-            <input type="text" input name="email" placeholder="Email" />
-            <input type="text" input name="phone" placeholder="Phone" />
-            <input type="text" input name="subject" placeholder="Subject" />
-            <input type="text" input name="message" placeholder="Message" />
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-        </div>
-        // <div className="row contactForm1">
-        //     <form className="col s12">
-        //         <div className="row">
-        //             <div className="input-field col s12">
-        //                 <input id="first_name2" type="text" className="validate" />
-        //                 <label className="active" form="first_name2">Name</label>
-        //             </div>
-        //         </div>
-        //         <div className="row">
-        //             <div className="input-field col s12">
-        //                 <input id="email" type="text" className="validate" />
-        //                 <label className="active" form="emial">Email</label>
-        //             </div>
-        //         </div>
-        //         <div className="row">
-        //             <div className="input-field col s12">
-        //                 <input id="email" type="text" className="validate" />
-        //                 <label className="active" form="phone">Phone</label>
-        //             </div>
-        //         </div>
-        //         <div className="row">
-        //             <div className="input-field col s12">
-        //                 <input id="email" type="text" className="validate" />
-        //                 <label className="active" form="subject">Subject</label>
-        //             </div>
-        //         </div>
-        //     </form>
-        // </div>
-    );
+
+class ContactForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            form: {
+                firstName: ' ',
+                phone: ' ',
+                email: ' ',
+                message: ' ',
+            }
+        };
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.reset = this.reset.bind(this);
+    }
+
+    reset() {
+        this.setState({
+            form: {
+                firstName: '',
+                phone: '',
+                email: '',
+                message: ''
+            }
+        });
+    }
+
+    handleInputChange(event) {
+        const { value, name } = event.target;
+        const { form } = this.state;
+        form[name] = value;
+        this.setState({
+            form: { ...form }
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        console.log('handleSubmit called, form values are:', this.state.form);
+
+    }
+
+    render() {
+        const { firstName, message, phone, email } = this.state.form;
+        return (
+            <form className="col l8" onSubmit={this.handleSubmit} >
+                <Field name="firstName" label="First Name" type="text" value={firstName} onChange={this.handleInputChange} />
+                <Field name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
+                <Field name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
+                <Field name="message" label="message" type="text" value={message} onChange={this.handleInputChange} />
+                <button>Submit</button>
+                <button type="button" onClick={this.reset}>Clear Info</button>
+            </form>
+
+        );
+    }
 }
+export default ContactForm

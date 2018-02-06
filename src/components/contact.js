@@ -13,9 +13,10 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className="col s12 lg12 middleContact">
-                    <ContactForm />
-                    <div className="col s12 lg6">
+                <div className="col s12 l12 middleContact">
+                    <ContactForm add={this.addContact} />
+                    {/* <ContactForm/> */}
+                    <div className="col s12 lg4">
                         <div className="contactText">
                             <h4>Visit us!!</h4>
                             <p className="pContactText">Monday-Friday | 10am - 9pm</p>
