@@ -15,7 +15,7 @@ export default props => {
             </div>
             <div className="row">
                 <div className="col s12">
-                    <div className='col l2 push-l1 classics'>
+                    <div className='col l3 push-l1 classics'>
                         <h4>Classics</h4>
                         <ul className="browser-default col s12">
                             <li>caribbean chocolate</li>
