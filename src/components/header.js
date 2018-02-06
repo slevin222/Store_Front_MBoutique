@@ -8,7 +8,7 @@ import '../assets/css/header.css';
 export default props => {
     return (
         <nav>
-            <div className="nav-wrapper">
+            <div className="nav-wrapper col s12">
                 <img src={logo} className="brand-logo" />
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
@@ -21,7 +21,7 @@ export default props => {
                         <NavLink to='/gifts_parties' activeClassName="acive selected" className="li">GIFTS & PARTIES</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact' activeClassName="acive selected" className="li">CONTACT</NavLink>
+                        <NavLink to='/contact' activeClassName="acive selected" className="li s3">CONTACT</NavLink>
                     </li>
                 </ul>
             </div>
