@@ -13,11 +13,11 @@ export default props => {
             </div>
             <div className="giftsText">
                 <h4>Let's eat Macarons!</h4>
-                <p>We make it easy to share la passion du macaron with your friends, family and colleagues. Choose from our array of premium gift options, or we can create a custom solution. Contact us when you need help planning your celebraion! orders@mboutique.com</p>
+                <p className="oueMacaronsPText">We make it easy to share la passion du macaron with your friends, family and colleagues. Choose from our array of premium gift options, or we can create a custom solution. Contact us when you need help planning your celebraion! orders@mboutique.com</p>
             </div>
             <div className="giftsText">
                 <h4>Gift Boxes</h4>
-                <p>Our signature gift boxes make macarons the perfect gift for any occasion</p>
+                <p className="oueMacaronsPText">Our signature gift boxes make macarons the perfect gift for any occasion</p>
                 <ul>
                     <li>gift box of 6 macarons in raspberrywhite - $10</li>
                     <li>gift box of 12 macarons in white, pistachio, or violet - $20</li>
@@ -29,8 +29,10 @@ export default props => {
             <div className="row">
                 <div className="col l7">
                     <h4 className="partyT">Party Tower</h4>
-                    <p className="pGiftsText">Our 5-tiered party tower becomes the centerpiece of any special event or private celebration, elegantly presenting your unique selection of sixty macarons</p>
-                    <p className="pGiftsText">tower of sixty macarons = $120</p>
+                    <p className="oueMacaronsPText">Our 5-tiered party tower becomes the centerpiece of any special event or private celebration, elegantly presenting your unique selection of sixty macarons</p>
+                    <ul className="browser-default partyUl">
+                        <li>tower of sixty macarons = $120</li>
+                    </ul>
                 </div>
                 <div className="giftsTextBottom col l4" style={{ backgroundImage: "url(" + giftsPartiesBackground + ")" }}>
                 </div>
