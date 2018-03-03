@@ -1,12 +1,11 @@
 .nav-wrapper{
     background-color:#fffabe;
-    height:10%;
 }
 a.li{
     color:black;
 }
-img{
-    margin: 1% 0 0 3%;;
+.brand-logo{
+    margin: 1% 0 0 3%;
 }
 
 nav ul li:hover{

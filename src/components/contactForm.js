@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../assets/css/contactForm.css';
 import Field from './field.js';
 
 
@@ -49,13 +48,13 @@ class ContactForm extends Component {
     render() {
         const { firstName, message, phone, email } = this.state.form;
         return (
-            <form className="col l8" onSubmit={this.handleSubmit} >
+            <form className="col l7 s12" onSubmit={this.handleSubmit} >
                 <Field name="firstName" label="First Name" type="text" value={firstName} onChange={this.handleInputChange} />
                 <Field name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
                 <Field name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
                 <Field name="message" label="message" type="text" value={message} onChange={this.handleInputChange} />
-                <button>Submit</button>
-                <button type="button" onClick={this.reset}>Clear Info</button>
+                <button className="waves-effect waves-light btn-small light-blue darken-1">Submit</button>
+                <button type="button" className="waves-effect waves-light btn-small red accent-4 clearBtn" onClick={this.reset}>Clear Info</button>
             </form>
 
         );

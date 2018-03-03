@@ -8,7 +8,7 @@ import twitter from '../assets/images/twitter.png';
 
 export default props => {
     return (
-        <footer className="page-footer">
+        <footer className="page-footer z-depth-2">
             <div className="row footerRow">
                 <div className="col l3 s12 footerLeft">
                     <img src={mail} className="mailImg" />
