@@ -1,25 +1,14 @@
-p{
-    margin:0;
-    padding-left:3%;
-}
 
 .welcomeImg{
     margin: 1% 0 0 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
 }
 
 .macarons{
     margin-top: 6%;
    
- 
-    
 }
 
-h4{
-    font-size: 3vmin;
-    font-weight: bold;
-}
 .days{
     display: flex;
     height: 25vh;
@@ -70,4 +59,8 @@ h4{
 .smallMacaronImg{
     float:right;
     margin-right:7%;
+}
+
+p{
+    padding:0;  
 }
