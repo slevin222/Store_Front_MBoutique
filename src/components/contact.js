@@ -9,7 +9,7 @@ export default props => {
         <div>
             <div className="row">
                 <div className="col lg12">
-                    <img src={contactImage} className="contactImg col s12 z-depth-2" />
+                    <img src={contactImage} className="contactImg col s12 z-depth-1" />
                 </div>
             </div>
             <div className="row">
