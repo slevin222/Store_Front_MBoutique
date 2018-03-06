@@ -8,7 +8,7 @@ export default props => {
         <div>
             <div className="row">
                 <div className="col s12">
-                    <img src={ourMacarons} className="ourMacaronsImg z-depth-2 " />
+                    <img src={ourMacarons} className="ourMacaronsImg z-depth-1 " />
                 </div>
             </div>
             <div className="row">
@@ -38,7 +38,7 @@ export default props => {
                     </ul>
                 </div>
                 <div className="col l9 hide-on-med-and-down">
-                    <img src={ourMacaronsBackground} className="ourMacaronsImg2 z-depth-2" />
+                    <img src={ourMacaronsBackground} className="ourMacaronsImg2 z-depth-1" />
                 </div>
             </div>
             <div className="row">
