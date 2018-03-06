@@ -31,8 +31,8 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className="valign-wrapper macarons col l3">
-                    <img src={macarons} className="hide-on-med-and-down" />
+                <div className="hide-on-med-and-down macarons col l3" style={{ backgroundImage: "url(" + macarons + ")" }}>
+                    {/* <img src={macarons} className="hide-on-med-and-down" /> */}
                 </div>
                 <div className="col l9 m12 s12 middleText">
                     <h4>Welcome to MBoutique!</h4>
@@ -47,7 +47,7 @@ export default props => {
             </div>
             <div className="row">
                 <div className="col s12 days">
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Monday</p>
                             <p>15:00 - 16:00</p>
@@ -61,7 +61,7 @@ export default props => {
                             <p>coconut</p>
                         </div>
                     </div>
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Tuesday</p>
                             <p>15:00 - 16:00</p>
@@ -75,7 +75,7 @@ export default props => {
                             <p>green tea</p>
                         </div>
                     </div>
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Wednesday</p>
                             <p>9:00 - 10:00</p>
@@ -89,7 +89,7 @@ export default props => {
                             <p>vanilla</p>
                         </div>
                     </div>
-                    <dic className="everyday">
+                    <dic className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Thursday</p>
                             <p>18:00 - 19:00</p>
@@ -103,7 +103,7 @@ export default props => {
                             <p>pistachio</p>
                         </div>
                     </dic>
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Friday</p>
                             <p>11:00 - 12:00</p>
@@ -117,7 +117,7 @@ export default props => {
                             <p>lemon</p>
                         </div>
                     </div>
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Saturday</p>
                             <p>13:00 - 14:00</p>
@@ -131,7 +131,7 @@ export default props => {
                             <p>tiffany blue</p>
                         </div>
                     </div>
-                    <div className="everyday">
+                    <div className="everyday z-depth-1">
                         <div className="daystop">
                             <p>Sunday</p>
                             <p>10:00 - 11:00</p>
