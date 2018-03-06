@@ -2,12 +2,7 @@
 
     font-size: 9px;
 }
-.footerMiddle{
-    text-align: center;
-}
-.footerLeft{
-    text-align:center;
-}
+
 
 .page-footer{
 
@@ -43,5 +38,5 @@ p{
 }
 .phone{
     padding:0;
-    margin-right: 36%;
+    /* margin-right: 36%; */
 }
