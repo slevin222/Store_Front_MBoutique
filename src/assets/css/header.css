@@ -11,3 +11,9 @@ a.li{
 nav ul li:hover{
     background-color: #f896b0;
 }
+
+.material-icons{
+    color: black;
+}
+
+

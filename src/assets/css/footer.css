@@ -1,8 +1,7 @@
 .copyR{
 
-    font-size: 9px;
+    font-size: 1.5vmin;
 }
-
 
 .page-footer{
 
@@ -11,32 +10,11 @@
 }
 
 .footerRow{
-    padding-top: 1%;
-    margin-bottom: 0;
+    padding-bottom: .5%;
+    margin-bottom: 0; 
 }
 p{
     margin:0;
 }
-.mailImg{
-    float:left;
-    margin-left:18%;
-    padding-top:1%;
-}
-.twitterImg{
-    float:right;
-    margin:1% 40% 0 5%;
-    padding-top:1%;
-}
-.facebookImg{
-    float:right;
-   
-    padding-top:.5%;
-}
-.phoneImg{
-    float:left;
-    margin-left: 40%;
-}
-.phone{
-    padding:0;
-    /* margin-right: 36%; */
-}
+
+

@@ -31,10 +31,10 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className="hide-on-med-and-down macarons col l3" style={{ backgroundImage: "url(" + macarons + ")" }}>
-                    {/* <img src={macarons} className="hide-on-med-and-down" /> */}
+                <div className="hide-on-med-and-down macarons col l4 m4 center-align">
+                    <img src={macarons} className="hide-on-med-and-down" />
                 </div>
-                <div className="col l9 m12 s12 middleText">
+                <div className="col l8 s12 middleText">
                     <h4>Welcome to MBoutique!</h4>
                     <p className="middleText">We're a home-based baking business that specializes in the making of French macarons, a gluten free
                         pastry item made from ground almonds. Our business began at the West Reading Farmers Market in 2011.

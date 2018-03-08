@@ -18,7 +18,7 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className='col s12 l3'>
+                <div className='col s6 l3 offset-s3'>
                     <h4>Classics</h4>
                     <ul className="browser-default">
                         <li>caribbean chocolate</li>
