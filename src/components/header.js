@@ -35,7 +35,6 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav >
-
                 <ul className="sidenav" id="mobile-demo">
                     <li>
                         <NavLink exact to='/' activeClassName="acive selected" className="li">WELCOME</NavLink>
