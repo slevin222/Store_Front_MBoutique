@@ -8,8 +8,8 @@ export default props => {
     return (
         <div>
             <div className="row">
-                <div className="col lg12">
-                    <img src={contactImage} className="contactImg col s12 z-depth-1" />
+                <div className="col s12">
+                    <img src={contactImage} className="contactImg z-depth-1" />
                 </div>
             </div>
             <div className="row">

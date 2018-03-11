@@ -18,7 +18,7 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className='col s6 l3 offset-s3'>
+                <div className='col s6 l3 offset-s3 hide-on-med-and-down'>
                     <h4>Classics</h4>
                     <ul className="browser-default">
                         <li>caribbean chocolate</li>
@@ -36,6 +36,31 @@ export default props => {
                         <li>violet cassis</li>
                         <li>salted caramel</li>
                     </ul>
+                </div>
+                <div className="col s12 hide-on-med-and-up show-on-medium-and-down">
+                    <h4 className="center-align">Classics</h4>
+                    <div className="col s6">
+                        <ul className="browser-default">
+                            <li>caribbean chocolate</li>
+                            <li>coconut</li>
+                            <li>colombian coffee</li>
+                            <li>green tea</li>
+                            <li>lemon</li>
+                            <li>madagascar vanilla</li>
+                            <li>passion fruit</li>
+                        </ul>
+                    </div>
+                    <div className="col s6">
+                        <ul className="browser-default">
+                            <li>rose</li>
+                            <li>raspberry</li>
+                            <li>tiffany blue</li>
+                            <li>sicilian pistachio</li>
+                            <li>sweet wedding almond</li>
+                            <li>violet cassis</li>
+                            <li>salted caramel</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="col l9 hide-on-med-and-down">
                     <img src={ourMacaronsBackground} className="ourMacaronsImg2 z-depth-1" />
