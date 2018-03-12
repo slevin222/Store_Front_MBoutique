@@ -18,7 +18,7 @@ class Header extends Component {
                 <nav>
                     <div className="nav-wrapper">
                         <img src={logo} className="brand-logo" />
-                        <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                        <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
                             <li>
                                 <NavLink exact to='/' activeClassName="acive selected" className="li">WELCOME</NavLink>

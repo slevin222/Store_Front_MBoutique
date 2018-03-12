@@ -31,7 +31,7 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className="hide-on-med-and-down macarons col l4 m4 center-align">
+                <div className="hide-on-med-and-down macarons col l4 m4">
                     <img src={macarons} className="hide-on-med-and-down" />
                 </div>
                 <div className="col l8 s12 middleText">
