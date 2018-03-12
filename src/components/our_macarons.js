@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/ourMacarons.css';
+import '../assets/css/allPages.css';
 import ourMacarons from '../assets/images/our-macarons-image.png';
 import ourMacaronsBackground from '../assets/images/our_macarons_background.png';
 
@@ -7,7 +7,7 @@ export default props => {
     return (
         <div>
             <div className="row">
-                <div className="col s12">
+                <div className="col s12" id="ouMacaronsImg">
                     <img src={ourMacarons} className="ourMacaronsImg z-depth-1 " />
                 </div>
             </div>
@@ -63,7 +63,7 @@ export default props => {
                     </div>
                 </div>
                 <div className="col l9 hide-on-med-and-down">
-                    <img src={ourMacaronsBackground} className="ourMacaronsImg2 z-depth-1" />
+                    <img src={ourMacaronsBackground} className="ourMacaronsImg z-depth-1" />
                 </div>
             </div>
             <div className="row">

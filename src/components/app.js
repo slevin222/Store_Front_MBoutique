@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import '../assets/css/app.css';
+import '../assets/css/allPages.css';
 import Home from './home';
 import Footer from './footer';
 import logo from '../assets/images/logo.png';

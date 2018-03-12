@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/contact.css';
+import '../assets/css/allPages.css';
 import ContactForm from './contactForm';
 import contactImage from '../assets/images/contact-image.png';
 
@@ -8,7 +8,7 @@ export default props => {
     return (
         <div>
             <div className="row">
-                <div className="col s12">
+                <div className="col s12" id="contactImage">
                     <img src={contactImage} className="contactImg z-depth-1" />
                 </div>
             </div>
