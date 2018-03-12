@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import '../assets/css/app.css';
+import '../assets/css/allPages.css';
 import Header from './header';
 import Footer from './footer';
 import Macarons from './our_macarons';

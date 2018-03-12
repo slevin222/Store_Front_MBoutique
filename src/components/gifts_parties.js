@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/allPages.css';
 import giftsPartiesImage from '../assets/images/gifts-parties-image.png';
 import giftsPartiesBackground from '../assets/images/gifts_parties_background.png';
 
@@ -6,7 +7,7 @@ export default props => {
     return (
         <div>
             <div className="row">
-                <div className="col s12">
+                <div className="col s12" id="giftsPartiesImg">
                     <img src={giftsPartiesImage} className="giftsPartiesImg z-depth-1" />
                 </div>
             </div>

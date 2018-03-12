@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Field from './field.js';
+import Field from './contactFields.js';
 
 
 class ContactForm extends Component {

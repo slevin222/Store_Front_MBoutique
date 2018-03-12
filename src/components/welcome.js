@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/welcome.css';
+import '../assets/css/allPages.css';
 import welcome from '../assets/images/welcome-image.png';
 import macarons from '../assets/images/macarons-image.png';
 import chocolate from '../assets/images/chocolate.png';
@@ -26,7 +26,7 @@ export default props => {
 
         <div>
             <div className="row">
-                <div className="welcomeImage col s12">
+                <div className="col s12" id="welcomeImage">
                     <img src={welcome} className="welcomeImg z-depth-1" />
                 </div>
             </div>
