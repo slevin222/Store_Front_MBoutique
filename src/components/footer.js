@@ -15,10 +15,12 @@ export default props => {
                 </div>
                 <div className="col l4 s12 footerMiddle center-align">
                     <h6 className="phone"> <i className="fa fa-phone-square fa-lg"></i> 949.900.3111</h6>
-                    <p className="copyR">COPYRIGHT @ 2017 MBOUTIQUE. ALL RIGHTS RESERVED</p>
                 </div>
                 <div className="col l4 s12 footerRight center-align">
                     <p><i className="fa fa-twitter fa-lg"></i> <i className="fa fa-facebook-official fa-lg"></i> Follow us</p>
+                </div>
+                <div className="col s12 center-align">
+                    <p className="copyR">COPYRIGHT @ 2017 MBOUTIQUE. ALL RIGHTS RESERVED</p>
                 </div>
             </div>
         </footer>

@@ -6,13 +6,13 @@ import Footer from './footer';
 import Macarons from './our_macarons';
 import GiftsParties from './gifts_parties';
 import Contact from './contact';
-import Welcome from './welcome';
+import WelcomePage from './welcome';
 
 export default props => {
     return (
         <div className="homeContainer">
             <Header />
-            <Route exact path="/" component={Welcome} />
+            <Route exact path="/" component={WelcomePage} />
             <Route path="/our_macarons" component={Macarons} />
             <Route path="/gifts_parties" component={GiftsParties} />
             <Route path="/contact" component={Contact} />
