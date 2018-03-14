@@ -18,7 +18,7 @@ body{
 
 .side-nav.right-aligned{
     transition-timing-function: ease-out;
-    transition-duration: 0.25s;
+    transition-duration: 0.50s;
 }
 
 #mobileNav{
@@ -168,8 +168,9 @@ h4{
 }
 
 .page-footer{
-
+    height: 14vh;
     background-color:#df5277;
+    padding-top: 2%;
 
 }
 
