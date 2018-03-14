@@ -16,6 +16,20 @@ body{
 
 /* HEADER CSS */
 
+.side-nav.right-aligned{
+    transition-timing-function: ease-out;
+    transition-duration: 0.25s;
+}
+
+#mobileNav{
+    width: 60%;
+    background-color: #fffabe;
+}
+
+.large.material-icons{
+    font-size: 36px;
+}
+
 .nav-wrapper{
     background-color:#fffabe;
 }
@@ -40,10 +54,6 @@ nav ul li:hover{
 .welcomeImg{
     margin: 1% 0 0 0;
     width: 100%;
-}
-
-#welcomeImage{
-    padding: 0;
 }
 
 .macarons{
@@ -126,20 +136,12 @@ h4{
     width: 100%;
 }
 
-#ouMacaronsImg{
-    padding: 0;
-}
-
 
 /* GIFTS AND PARTIES CSS */
 
 .giftsPartiesImg{
     margin: 1% 0 0 0;
     width: 100%;
-}
-
-#giftsPartiesImg{
-    padding: 0;
 }
 
 
@@ -157,11 +159,6 @@ h4{
 .clearBtn{
     margin-left: 2%;
 }
-
-#contactImage{
-    padding: 0;
-}
-
 
 /* FOOTER CSS */
 
