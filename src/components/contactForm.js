@@ -61,8 +61,8 @@ class ContactForm extends Component {
                 <Field name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
                 <Field name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
                 <Field name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
-                <button className="waves-effect waves-light btn-small light-blue darken-1">Submit</button>
-                <button type="button" className="waves-effect waves-light btn-small red accent-4 clearBtn" onClick={this.reset}>Clear Info</button>
+                <button className="submitBtn btn waves-effect waves-light btn-small light-blue darken-1">Submit</button>
+                <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.reset}>Clear Info</button>
             </form>
 
         );

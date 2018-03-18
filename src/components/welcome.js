@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/allPages.css';
-import welcome from '../assets/images/welcome-image.png';
+import welcome from '../assets/images/french-macarons.jpg';
 import macarons from '../assets/images/macarons-image.png';
 import DaysOfWeek from './daysOfWeek';
 

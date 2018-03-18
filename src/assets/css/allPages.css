@@ -37,7 +37,7 @@ a.li{
     color:black;
 }
 .brand-logo{
-    margin: 1% 0 0 3%;
+    margin: 2% 0 0 3%;
 }
 
 nav ul li:hover{
@@ -160,6 +160,9 @@ h4{
     margin-left: 2%;
 }
 
+.submitBtn{
+    margin-right: 2%;
+}
 /* FOOTER CSS */
 
 .copyR{

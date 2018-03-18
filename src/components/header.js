@@ -23,6 +23,7 @@ class Header extends Component {
         this.returnMenu = this.returnMenu.bind(this);
 
     }
+
     slideOutMenu() {
         const shadowBox = { ...this.state.dragStyle };
         delete shadowBox.right;
