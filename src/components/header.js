@@ -79,7 +79,8 @@ class Header extends Component {
                         </li>
                     </ul>
                     <div>
-                        <ul className="side-nav right-aligned" id="mobileNav" style={this.state.navStyle}>
+                        <ul className="side-nav right-aligned" id="mobileNav" style={this.state.navStyle} >
+                            <img src={logo} className="macaronsNav" />
                             <li>
                                 <NavLink exact to='/' onClick={this.returnMenu} >WELCOME</NavLink >
                             </li>
@@ -92,8 +93,8 @@ class Header extends Component {
                             <li>
                                 <NavLink to='/contact' onClick={this.returnMenu} >CONTACT</NavLink >
                             </li>
+                            <img src={macarons} className="macaronsNav" />
                         </ul>
-
                         <div onClick={this.returnMenu} className="drag-target" style={this.state.dragStyle} />
                     </div>
                 </div>

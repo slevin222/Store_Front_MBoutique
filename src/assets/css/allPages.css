@@ -48,6 +48,9 @@ nav ul li:hover{
     color: black;
 }
 
+.macaronsNav{
+    margin: 8% 0 0 8%;
+}
 
 /* WELCOME CSS */
 
@@ -187,7 +190,7 @@ p{
 
 @media only screen and (min-width: 250px) {
     #mobileNav{
-        width: 60%;
+        width: 70%;
     }
     p{
         font-size: 3.3vmin;
@@ -198,9 +201,17 @@ p{
     .visitUs{
         font-size: 7vmin;
     }
+    .order, .facebook,
+    .phone, .copyR{
+        margin-top:1%;
+        font-size: 3vmin;
+    }
+    .page-footer{
+        height: 16vh;
+    }
 }
 
-@media only screen and (min-width: 550px){
+@media only screen and (min-width: 500px){
     #mobileNav{
         width: 50%;
     }
@@ -213,11 +224,22 @@ p{
     .visitUs{
         font-size: 7vmin;
     }
+    .order, .facebook,
+    .phone, .copyR{
+        margin-top:.5%;
+        font-size: 2.3vmin;
+    }
+  
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 600px){
     #mobileNav{
         width: 40%;
+    }
+}
+@media only screen and (min-width: 750px) and (min-width: 1050px) {
+    #mobileNav{
+        width: 30%;
     }
     p{
         font-size: 2.5vmin;
@@ -228,8 +250,16 @@ p{
     .visitUs{
         font-size: 6vmin;
     }
+    .order, .facebook,
+    .phone, .copyR{
+        margin-top:.5%;
+        font-size: 2.2vmin;
+    }
+    .page-footer{
+        height: 14vh;
+    }
 }
-
+/* 
 @media only screen and (min-width: 1050px){
   
     .contactText{
@@ -238,5 +268,9 @@ p{
     p{
         font-size: 2.3vmin;
     }
+    .footerLeft, .footerMiddle,
+    .footerRight, .copyR{
+        margin-top:0;
+    }
   
-}
+} */

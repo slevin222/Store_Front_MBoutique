@@ -73,7 +73,7 @@ class daysOfWeek extends Component {
                 time: "13:00 - 14:00",
                 flavor1: "rose",
                 macImg1: rose,
-                flavor2: "tiffany Blue",
+                flavor2: "tiffany blue",
                 macImg2: tiffanyblue
             },
             {
