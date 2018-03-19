@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/allPages.css';
-import ourMacarons from '../assets/images/our-macarons-image.png';
+import ourMacarons from '../assets/images/our-macarons.jpg';
 import ourMacaronsBackground from '../assets/images/our_macarons_background.png';
 
 export default props => {
@@ -21,44 +21,44 @@ export default props => {
                 <div className='col s6 l3 offset-s3 hide-on-med-and-down'>
                     <h4>Classics</h4>
                     <ul className="browser-default">
-                        <li>caribbean chocolate</li>
-                        <li>coconut</li>
-                        <li>colombian coffee</li>
-                        <li>green tea</li>
-                        <li>lemon</li>
-                        <li>madagascar vanilla</li>
-                        <li>passion fruit</li>
-                        <li>rose</li>
-                        <li>raspberry</li>
-                        <li>tiffany blue</li>
-                        <li>sicilian pistachio</li>
-                        <li>sweet wedding almond</li>
-                        <li>violet cassis</li>
-                        <li>salted caramel</li>
+                        <li>Caribbean Chocolate</li>
+                        <li>Coconut</li>
+                        <li>Colombian Coffee</li>
+                        <li>Green Tea</li>
+                        <li>Lemon</li>
+                        <li>Madagascar Vanilla</li>
+                        <li>Passion Fruit</li>
+                        <li>Rose</li>
+                        <li>Raspberry</li>
+                        <li>Tiffany Blue</li>
+                        <li>Sicilian Pistachio</li>
+                        <li>Sweet Wedding Almond</li>
+                        <li>Violet Cassis</li>
+                        <li>Salted Caramel</li>
                     </ul>
                 </div>
                 <div className="col s12 hide-on-med-and-up show-on-medium-and-down">
                     <h4 className="center-align">Classics</h4>
                     <div className="col s6">
                         <ul className="browser-default">
-                            <li>caribbean chocolate</li>
-                            <li>coconut</li>
-                            <li>colombian coffee</li>
-                            <li>green tea</li>
-                            <li>lemon</li>
-                            <li>madagascar vanilla</li>
-                            <li>passion fruit</li>
+                            <li>Caribbean Chocolate</li>
+                            <li>Coconut</li>
+                            <li>Colombian Coffee</li>
+                            <li>Green Tea</li>
+                            <li>Lemon</li>
+                            <li>Madagascar Vanilla</li>
+                            <li>Passion Fruit</li>
                         </ul>
                     </div>
                     <div className="col s6">
                         <ul className="browser-default">
-                            <li>rose</li>
-                            <li>raspberry</li>
-                            <li>tiffany blue</li>
-                            <li>sicilian pistachio</li>
-                            <li>sweet wedding almond</li>
-                            <li>violet cassis</li>
-                            <li>salted caramel</li>
+                            <li>Rose</li>
+                            <li>Raspberry</li>
+                            <li>Tiffany Blue</li>
+                            <li>Sicilian Pistachio</li>
+                            <li>Sweet Wedding Almond</li>
+                            <li>Violet Cassis</li>
+                            <li>Salted Caramel</li>
                         </ul>
                     </div>
                 </div>

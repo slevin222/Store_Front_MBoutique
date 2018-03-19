@@ -1,9 +1,6 @@
 import React from 'react';
 import '../assets/css/allPages.css';
-import mail from '../assets/images/mail.png';
-import phone from '../assets/images/phone.png';
-import facebook from '../assets/images/facebook.png';
-import twitter from '../assets/images/twitter.png';
+
 
 
 export default props => {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import '../assets/css/allPages.css';
+import macarons from '../assets/images/macarons-image.png';
 
 
 
@@ -34,7 +35,7 @@ class Header extends Component {
             dragStyle: {
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 left: "0px",
-                width: "40%",
+                width: "70%",
                 transitionDuration: "0.50s"
             }
         });
@@ -92,6 +93,7 @@ class Header extends Component {
                                 <NavLink to='/contact' onClick={this.returnMenu} >CONTACT</NavLink >
                             </li>
                         </ul>
+
                         <div onClick={this.returnMenu} className="drag-target" style={this.state.dragStyle} />
                     </div>
                 </div>

@@ -14,9 +14,11 @@ export default props => {
             </div>
             <div className="row">
                 <ContactForm add={this.addContact} />
-                <div className="col s12 l5">
+                <div className="col s12 l5 offset-l1">
                     <div className="contactText">
-                        <h4>Visit us!!</h4>
+                        <div className="center-align">
+                            <h4 className="visitUs">Visit us!!</h4>
+                        </div>
                         <div className="divider"></div>
                         <p className="pContactText">Monday-Friday | 10am - 9pm</p>
                         <p className="pContactText">Saturday | 10am - 8pm</p>

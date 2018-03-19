@@ -22,7 +22,7 @@ body{
 }
 
 #mobileNav{
-    width: 60%;
+    width: 30%;
     background-color: #fffabe;
 }
 
@@ -183,4 +183,60 @@ h4{
 }
 p{
     margin:0;
+}
+
+@media only screen and (min-width: 250px) {
+    #mobileNav{
+        width: 60%;
+    }
+    p{
+        font-size: 3.3vmin;
+    }
+    .contactText{
+        margin-top: 8%;
+    }
+    .visitUs{
+        font-size: 7vmin;
+    }
+}
+
+@media only screen and (min-width: 550px){
+    #mobileNav{
+        width: 50%;
+    }
+    p{
+        font-size: 2.9vmin;
+    }
+    .contactText{
+        margin-top: 8%;
+    }
+    .visitUs{
+        font-size: 7vmin;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    #mobileNav{
+        width: 40%;
+    }
+    p{
+        font-size: 2.5vmin;
+    }
+    .contactText{
+        margin-top: 8%;
+    }
+    .visitUs{
+        font-size: 6vmin;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+  
+    .contactText{
+        margin-top: 0;
+    }
+    p{
+        font-size: 2.3vmin;
+    }
+  
 }

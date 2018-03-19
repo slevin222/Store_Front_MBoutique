@@ -34,7 +34,7 @@ class daysOfWeek extends Component {
                 id: "tuesday",
                 day: "Tuesday",
                 time: "14:00 - 15:00",
-                flavor1: "violet Cassis",
+                flavor1: "violet cassis",
                 macImg1: violetcassis,
                 flavor2: "green Tea",
                 macImg2: greentea
@@ -44,7 +44,7 @@ class daysOfWeek extends Component {
                 id: "wednesday",
                 day: "Wednesday",
                 time: "9:00 - 10:00",
-                flavor1: "passion Fruit",
+                flavor1: "passion fruit",
                 macImg1: passionfruit,
                 flavor2: "vanilla",
                 macImg2: vanilla
