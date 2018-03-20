@@ -29,7 +29,7 @@ const WelcomePage = () => {
                     <h4>Try a sample every day!</h4>
                 </div>
             </div>
-            <div className="row">
+            <div className="row" id="daysOfWeek">
                 <DaysOfWeek />
             </div>
         </div >
