@@ -97,11 +97,11 @@ class daysOfWeek extends Component {
                     </div>
                     <div className="daysmiddle">
                         <img src={item.macImg1} className="smallMacaronImg" />
-                        <p>{item.flavor1}</p>
+                        <p className="pFlavor">{item.flavor1}</p>
                     </div>
                     <div className="daysbottom" id={item.id}>
                         <img src={item.macImg2} className="smallMacaronImg" />
-                        <p>{item.flavor2}</p>
+                        <p className="pFlavor">{item.flavor2}</p>
                     </div>
                 </div>
             )
