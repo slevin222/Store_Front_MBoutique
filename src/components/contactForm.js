@@ -58,11 +58,11 @@ class ContactForm extends Component {
         return (
 
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
-                <Field name="firstName" label="Name" type="text" value={firstName} onChange={this.handleInputChange} />
-                <Field name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
-                <Field name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
-                <Field name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
-                <button className="submitBtn btn waves-effect waves-light btn-small light-blue darken-1">Submit</button>
+                <Field id="firstName" name="firstName" label="Name" type="text" value={firstName} onChange={this.handleInputChange} />
+                <Field id="phone" name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
+                <Field id="email" name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
+                <Field id="message" name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
+                <button className="submitBtn btn waves-effect waves-light btn-medium light-blue darken-1">Submit</button>
                 <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.reset}>Clear</button>
             </form>
 

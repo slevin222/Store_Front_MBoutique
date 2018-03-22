@@ -18,7 +18,7 @@ body{
 
 .side-nav.right-aligned{
     transition-timing-function: ease-out;
-    transition-duration: 0.50s;
+    transition-duration: 0.75s;
 }
 
 #mobileNav{
@@ -60,7 +60,7 @@ nav ul li:hover{
 }
 
 .macarons{
-    margin-top: 14%;
+    margin-top: 12%;
     height: 45vh;
     background-size: auto;
     background-repeat: no-repeat;
@@ -81,7 +81,10 @@ nav ul li:hover{
     margin: 0 .5% 2% .5%;
 
 }
-
+.daysMed{
+    background-color:#fffabe;
+    margin-top:1.5%;
+}
 .daystop{
     margin-top:7%;
     height: 45%;
@@ -97,6 +100,10 @@ nav ul li:hover{
 .daysbottom{
     height:25%;
     padding-left: 3px;
+}
+
+.daysText{
+    font-size:2vmin;
 }
 
 #monday{
@@ -145,7 +152,9 @@ h4{
     width: 100%;
 }
 
-
+#list1, #list2{
+    padding:0;
+}
 /* GIFTS AND PARTIES CSS */
 
 .giftsPartiesImg{
@@ -190,6 +199,7 @@ h4{
     padding-bottom: .5%;
     margin-bottom: 0; 
 }
+
 p{
     margin:0;
 }
@@ -199,7 +209,10 @@ p{
         width: 70%;
     }
     p{
-        font-size: 3.3vmin;
+        font-size: 3.5vmin;
+    }
+    li{
+        font-size: 3.4vmin;
     }
     .contactText{
         margin-top: 8%;
@@ -215,6 +228,12 @@ p{
     .page-footer{
         height: 16vh;
     }
+    #firstName, #email, #phone, #message{
+        height: 2rem;
+    }
+    .daysText{
+        font-size:3.5vmin;
+    }
 }
 
 @media only screen and (min-width: 500px){
@@ -223,6 +242,9 @@ p{
     }
     p{
         font-size: 2.9vmin;
+    }
+    li{
+        font-size: 2.8vmin;
     }
     .contactText{
         margin-top: 8%;
@@ -238,7 +260,12 @@ p{
     .container{
         width: 90%;
     }
-  
+    #firstName, #email, #phone, #message{
+        height: 2rem;
+    }
+    .daysText{
+        font-size:3vmin;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -248,16 +275,29 @@ p{
     p{
         font-size: 2.3vmin;
     }
+    li{
+        font-size: 2.2vmin;
+    }
     .container{
-        width: 90%;
+        width: 85%;
+    }
+    #firstName, #email, #phone, #message{
+        height: 2rem;
+    }
+    .daysText{
+        font-size:2vmin;
     }
 }
+
 @media only screen and (min-width: 750px) and (min-width: 1050px) {
     #mobileNav{
         width: 30%;
     }
     p{
         font-size: 2.2vmin;
+    }
+    li{
+        font-size: 2.1vmin;
     }
     .contactText{
         margin-top: 8%;
@@ -274,13 +314,33 @@ p{
         height: 14vh;
     }
     .container{
-        width: 85%;
+        width: 80%;
+    }
+    #firstName, #email, #phone, #message{
+        height: 2.5rem;
+    }
+    .daysText{
+        font-size:2vmin;
     }
 }
+
 @media only screen and (min-width: 1051px) and (min-width: 1190px) {
     .container{
-        width: 85%;
+        width: 80%;
+    } 
+    .daysText{
+        font-size:2vmin;
     }
+}
 
-
+@media only screen and (min-width: 1191px) {
+    .container{
+        width: 70%;
+    }
+    #firstName, #email, #phone, #message{
+        height: 3rem;
+    }
+    .daysText{
+        font-size:2vmin;
+    }
 }

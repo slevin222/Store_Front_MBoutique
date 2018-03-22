@@ -18,7 +18,7 @@ export default props => {
                 </div>
             </div>
             <div className="row">
-                <div className="col l7 m12 s12">
+                <div className="col l7 m8 s12">
                     <h4>Gift Boxes</h4>
                     <p>Our signature gift boxes make macarons the perfect gift for any occasion</p>
                     <ul className="browser-default">
@@ -34,7 +34,7 @@ export default props => {
                         <li>Tower of sixty macarons - $120</li>
                     </ul>
                 </div>
-                <div className="col l5 m8 s12">
+                <div className="col l5 m4 s12">
                     <img src={giftsPartiesBackground} className="giftsPartiesImg z-depth-1" />
                 </div>
             </div>

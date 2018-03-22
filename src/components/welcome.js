@@ -3,6 +3,7 @@ import '../assets/css/allPages.css';
 import welcome from '../assets/images/french-macarons.jpg';
 import macarons from '../assets/images/macarons-image.png';
 import DaysOfWeek from './daysOfWeek';
+import MedDaysOfWeek from './medDaysOfWeek';
 
 
 
@@ -15,7 +16,7 @@ const WelcomePage = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="hide-on-med-and-down macarons col l4 m4">
+                <div className="hide-on-med-and-down macarons col l4 m4 center-align">
                     <img src={macarons} className="hide-on-med-and-down" />
                 </div>
                 <div className="col l8 s12 middleText">
@@ -31,6 +32,7 @@ const WelcomePage = () => {
             </div>
             <div className="row" id="daysOfWeek">
                 <DaysOfWeek />
+                <MedDaysOfWeek />
             </div>
         </div >
     )
