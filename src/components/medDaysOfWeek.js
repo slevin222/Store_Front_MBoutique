@@ -88,10 +88,10 @@ class MedDaysOfWeek extends Component {
             {
                 id: "everyday",
                 day: "1625 Post St.",
-                time: '',
+                time: "CA 94115",
                 flavor1: "San Francisco",
                 macImg1: raspbery,
-                flavor2: "CA 94115",
+                flavor2: "",
                 macImg2: violetcassis
             }
         ];

@@ -123,6 +123,9 @@ nav ul li:hover{
     background-color: #c39003;
 }
 
+#sMonday, #sWednesday, #sFriday, #sSunday{
+    background-color: #c3edfb;
+}
 .middleText{
     padding: 0;
 }
@@ -228,7 +231,7 @@ p{
         width: 70%;
     }
     p{
-        font-size: 3.5vmin;
+        font-size: 3.2vmin;
     }
     li{
         font-size: 3.4vmin;
@@ -251,7 +254,7 @@ p{
         height: 2rem;
     }
     .daysText{
-        font-size:3.5vmin;
+        font-size:3.2vmin;
     }
     .row{
         margin-bottom: 4%;
@@ -272,7 +275,7 @@ p{
         width: 50%;
     }
     p{
-        font-size: 2.9vmin;
+        font-size: 2.7vmin;
     }
     li{
         font-size: 2.8vmin;
@@ -304,6 +307,7 @@ p{
         display: none;
     }
    
+   
 }
 
 @media only screen and (min-width: 600px){
@@ -328,6 +332,7 @@ p{
     h4{
         text-align: center;
     }
+   
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1050px) {
