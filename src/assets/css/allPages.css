@@ -18,7 +18,7 @@ body{
 
 .side-nav.right-aligned{
     transition-timing-function: ease-out;
-    transition-duration: 0.75s;
+    transition-duration: 0.5s;
 }
 
 #mobileNav{
@@ -84,6 +84,7 @@ nav ul li:hover{
 .daysMed{
     background-color:#fffabe;
     margin-top:1.5%;
+    height: 11vh;
 }
 .daystop{
     margin-top:7%;
@@ -129,6 +130,24 @@ nav ul li:hover{
 .smallMacaronImg{
     float:right;
     margin-right:7%;
+}
+
+.macaronsPicInfo{
+    height: 48%;
+    margin-top: 2%;
+}
+
+#macaronsPicText{
+    height: 100%;
+}
+
+#sMacaronsPicImages{
+    height: 100%;
+}
+
+.macaronsPicText{
+    height: 45%;
+    margin-top: 5%;
 }
 
 p{
@@ -204,7 +223,7 @@ p{
     margin:0;
 }
 
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 250px) and (max-width: 499px){
     #mobileNav{
         width: 70%;
     }
@@ -234,9 +253,21 @@ p{
     .daysText{
         font-size:3.5vmin;
     }
+    .row{
+        margin-bottom: 4%;
+    }
+    #everyday{
+        display: none;
+    }
+    h4{
+        text-align: center;
+    }
+    .daysMed{
+        height: 9vh;
+    }
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px) and (max-width: 599px){
     #mobileNav{
         width: 50%;
     }
@@ -266,6 +297,13 @@ p{
     .daysText{
         font-size:3vmin;
     }
+    h4{
+        text-align: center;
+    }
+    #everyday{
+        display: none;
+    }
+   
 }
 
 @media only screen and (min-width: 600px){
@@ -287,9 +325,12 @@ p{
     .daysText{
         font-size:2vmin;
     }
+    h4{
+        text-align: center;
+    }
 }
 
-@media only screen and (min-width: 750px) and (min-width: 1050px) {
+@media only screen and (min-width: 700px) and (max-width: 1050px) {
     #mobileNav{
         width: 30%;
     }
@@ -322,14 +363,21 @@ p{
     .daysText{
         font-size:2vmin;
     }
+    h4{
+        text-align: left;
+    }
+
 }
 
-@media only screen and (min-width: 1051px) and (min-width: 1190px) {
+@media only screen and (min-width: 1051px) and (max-width: 1190px) {
     .container{
         width: 80%;
     } 
     .daysText{
         font-size:2vmin;
+    }
+    h4{
+        text-align: left;
     }
 }
 
@@ -342,5 +390,8 @@ p{
     }
     .daysText{
         font-size:2vmin;
+    }
+    h4{
+        text-align: left;
     }
 }

@@ -39,7 +39,7 @@ export default props => {
                 </div>
                 <div className="col s12 hide-on-med-and-up show-on-medium-and-down">
                     <h4 className="center-align">Classics</h4>
-                    <div className="col s6" id="list1">
+                    <div className="col s6 m5 offset-m1" id="list1">
                         <ul className="browser-default">
                             <li>caribbean chocolate</li>
                             <li>coconut</li>
@@ -50,7 +50,7 @@ export default props => {
                             <li>passion fruit</li>
                         </ul>
                     </div>
-                    <div className="col s6" id="list2">
+                    <div className="col s5 offset-s1" id="list2">
                         <ul className="browser-default" >
                             <li>salted caramel</li>
                             <li>raspberry</li>

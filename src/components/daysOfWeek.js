@@ -24,7 +24,7 @@ class daysOfWeek extends Component {
             {
                 id: "monday",
                 day: "Monday",
-                time: "15:00 - 16:00",
+                time: "3 - 4 pm",
                 flavor1: "chocolate",
                 macImg1: chocolate,
                 flavor2: "coconut",
@@ -33,7 +33,7 @@ class daysOfWeek extends Component {
             {
                 id: "tuesday",
                 day: "Tuesday",
-                time: "14:00 - 15:00",
+                time: "2 - 3 pm",
                 flavor1: "violet cassis",
                 macImg1: violetcassis,
                 flavor2: "green Tea",
@@ -43,7 +43,7 @@ class daysOfWeek extends Component {
             {
                 id: "wednesday",
                 day: "Wednesday",
-                time: "9:00 - 10:00",
+                time: "9 - 10 am",
                 flavor1: "passion fruit",
                 macImg1: passionfruit,
                 flavor2: "vanilla",
@@ -52,7 +52,7 @@ class daysOfWeek extends Component {
             {
                 id: "thursday",
                 day: "Thursday",
-                time: "18:00 - 19:00",
+                time: "6 - 7 pm",
                 flavor1: "coffee",
                 macImg1: coffee,
                 flavor2: "pistachio",
@@ -61,7 +61,7 @@ class daysOfWeek extends Component {
             {
                 id: "friday",
                 day: "Friday",
-                time: "11:00 - 12:00",
+                time: "11 - 12 pm",
                 flavor1: "raspbery",
                 macImg1: raspbery,
                 flavor2: "lemon",
@@ -70,7 +70,7 @@ class daysOfWeek extends Component {
             {
                 id: "saturday",
                 day: "Saturday",
-                time: "13:00 - 14:00",
+                time: "1 - 2 pm",
                 flavor1: "rose",
                 macImg1: rose,
                 flavor2: "tiffany blue",
@@ -79,7 +79,7 @@ class daysOfWeek extends Component {
             {
                 id: "sunday",
                 day: "Sunday",
-                time: "10:00 - 11:00",
+                time: "10 - 11 am",
                 flavor1: "caramel",
                 macImg1: caramel,
                 flavor2: "almond",

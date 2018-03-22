@@ -11,7 +11,7 @@ export default props => {
                     <p className="order"><i className="fa fa-envelope fa-lg"></i> order@mboutique.com</p>
                 </div>
                 <div className="col l4 m4 s12 footerMiddle center-align">
-                    <p className="phone"> <i className="fa fa-phone-square fa-lg"></i> 949.900.3111</p>
+                    <p className="phone"> <i className="fa fa-phone-square fa-lg"></i> 949.690.1076</p>
                 </div>
                 <div className="col l4 m4 s12 footerRight center-align">
                     <p className="facebook"><i className="fa fa-twitter fa-lg"></i> <i className="fa fa-facebook-official fa-lg"></i> Follow us</p>

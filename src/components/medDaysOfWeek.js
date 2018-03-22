@@ -22,18 +22,18 @@ class MedDaysOfWeek extends Component {
     render() {
         const daysOfWeek = [
             {
-                id: "monday",
+                id: "sMonday",
                 day: "Monday",
-                time: "15:00 - 16:00",
+                time: "3 - 4 pm",
                 flavor1: "chocolate",
                 macImg1: chocolate,
                 flavor2: "coconut",
                 macImg2: coconut
             },
             {
-                id: "tuesday",
+                id: "sTuesday",
                 day: "Tuesday",
-                time: "14:00 - 15:00",
+                time: "2 - 3 pm",
                 flavor1: "violet cassis",
                 macImg1: violetcassis,
                 flavor2: "green Tea",
@@ -41,71 +41,85 @@ class MedDaysOfWeek extends Component {
 
             },
             {
-                id: "wednesday",
+                id: "sWednesday",
                 day: "Wednesday",
-                time: "9:00 - 10:00",
+                time: "9 - 10 am",
                 flavor1: "passion fruit",
                 macImg1: passionfruit,
                 flavor2: "vanilla",
                 macImg2: vanilla
             },
             {
-                id: "thursday",
+                id: "sThursday",
                 day: "Thursday",
-                time: "18:00 - 19:00",
+                time: "6 - 7 pm",
                 flavor1: "coffee",
                 macImg1: coffee,
                 flavor2: "pistachio",
                 macImg2: pistachio
             },
             {
-                id: "friday",
+                id: "sFriday",
                 day: "Friday",
-                time: "11:00 - 12:00",
+                time: "11 - 12 pm",
                 flavor1: "raspbery",
                 macImg1: raspbery,
                 flavor2: "lemon",
                 macImg2: lemon
             },
             {
-                id: "saturday",
+                id: "sSaturday",
                 day: "Saturday",
-                time: "13:00 - 14:00",
+                time: "1 - 2 pm",
                 flavor1: "rose",
                 macImg1: rose,
                 flavor2: "tiffany blue",
                 macImg2: tiffanyblue
             },
             {
-                id: "sunday",
+                id: "sSunday",
                 day: "Sunday",
-                time: "10:00 - 11:00",
+                time: "10 - 11 am",
                 flavor1: "caramel",
                 macImg1: caramel,
                 flavor2: "almond",
                 macImg2: almond
+            },
+            {
+                id: "everyday",
+                day: "1625 Post St.",
+                time: '',
+                flavor1: "San Francisco",
+                macImg1: raspbery,
+                flavor2: "CA 94115",
+                macImg2: violetcassis
             }
         ];
         const medSizedDays = daysOfWeek.map((item, index) => {
             return (
-                <div key={index} className="z-depth-1 col m4 s12 center-align daysMed">
-                    <div className=" col s12">
-                        <p>{item.day} {item.time}</p>
-                    </div>
-                    <div className="col s12">
-                        <div className="col s6">
-                            <img src={item.macImg1} className="smallMacaronImg" />
-                            <p className="pFlavor daysText">{item.flavor1}</p>
+                <div key={index} id={item.id} className="z-depth-1 col m6 s12 daysMed">
+                    <div className="col s5" id="macaronsPicText">
+                        <div className="macaronsPicText">
+                            <p>{item.day} </p>
                         </div>
-                        <div className="col s6">
+                        <div className="macaronsPicText">
+                            <p>{item.time}</p>
+                        </div>
+                    </div>
+                    <div className="col s7" id="sMacaronsPicImages">
+                        <div className="macaronsPicInfo">
+                            <img src={item.macImg1} className="smallMacaronImg" />
+                            <p className="pFlavor">{item.flavor1}</p>
+                        </div  >
+                        <div className="macaronsPicInfo">
                             <img src={item.macImg2} className="smallMacaronImg" />
-                            <p className="pFlavor daysText">{item.flavor2}</p>
+                            <p className="pFlavor">{item.flavor2}</p>
                         </div>
                     </div>
                 </div>
             )
         });
-        return <div className="col s12 daysSmall show-on-med-and-down hide-on-large-only">{medSizedDays}</div>;
+        return <div className="col s12 m12 show-on-med-and-down hide-on-large-only" id="daysSmall">{medSizedDays}</div>;
     }
 }
 export default MedDaysOfWeek;

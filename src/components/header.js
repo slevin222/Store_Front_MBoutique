@@ -35,8 +35,8 @@ class Header extends Component {
             dragStyle: {
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 left: "0px",
-                width: "70%",
-                transitionDuration: "1s"
+                width: "100%",
+                // transitionDuration: ".5s"
             }
         });
     }
