@@ -36,7 +36,7 @@ class Header extends Component {
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 left: "0px",
                 width: "70%",
-                transitionDuration: "0.50s"
+                transitionDuration: "1s"
             }
         });
     }

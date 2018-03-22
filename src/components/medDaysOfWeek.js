@@ -15,7 +15,7 @@ import tiffanyblue from '../assets/images/tiffany-blue.png';
 import caramel from '../assets/images/caramel.png';
 import almond from '../assets/images/almond.png';
 
-class daysOfWeek extends Component {
+class MedDaysOfWeek extends Component {
     constructor(props) {
         super(props);
     }
@@ -86,28 +86,26 @@ class daysOfWeek extends Component {
                 macImg2: almond
             }
         ];
-
-
-        const everyDaySamples = daysOfWeek.map((item, index) => {
+        const medSizedDays = daysOfWeek.map((item, index) => {
             return (
-                <div key={index} className="everyday z-depth-1">
-                    <div className="daystop">
-                        <p className="daysText">{item.day}</p>
-                        <p className="daysText">{item.time}</p>
+                <div key={index} className="z-depth-1 col m4 s12 center-align daysMed">
+                    <div className=" col s12">
+                        <p>{item.day} {item.time}</p>
                     </div>
-                    <div className="daysmiddle">
-                        <img src={item.macImg1} className="smallMacaronImg" />
-                        <p className="pFlavor daysText">{item.flavor1}</p>
-                    </div>
-                    <div className="daysbottom" id={item.id}>
-                        <img src={item.macImg2} className="smallMacaronImg" />
-                        <p className="pFlavor daysText">{item.flavor2}</p>
+                    <div className="col s12">
+                        <div className="col s6">
+                            <img src={item.macImg1} className="smallMacaronImg" />
+                            <p className="pFlavor daysText">{item.flavor1}</p>
+                        </div>
+                        <div className="col s6">
+                            <img src={item.macImg2} className="smallMacaronImg" />
+                            <p className="pFlavor daysText">{item.flavor2}</p>
+                        </div>
                     </div>
                 </div>
             )
         });
-        return <div className="col s12 days hide-on-med-and-down">{everyDaySamples}</div>;
+        return <div className="col s12 daysSmall show-on-med-and-down hide-on-large-only">{medSizedDays}</div>;
     }
 }
-
-export default daysOfWeek;
+export default MedDaysOfWeek;
