@@ -184,6 +184,10 @@ h4{
     width: 100%;
 }
 
+#giftsRight{
+    height: 55vh;
+}
+
 
 /* CONTACT CSS */
 .formErrors{
@@ -206,6 +210,16 @@ h4{
 
 .submitBtn{
     margin-right: 2%;
+}
+
+.messageSent{
+    font-size: 37px;
+    float:right;
+    color: white;
+    background-color: rgb(73, 228, 12);
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), ;
+    display: none;
 }
 /* FOOTER CSS */
 
@@ -276,6 +290,9 @@ p{
     .daysMed{
         height: 9vh;
     }
+    #giftsRight{
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 599px){
@@ -314,7 +331,9 @@ p{
     #everyday{
         display: none;
     }
-   
+    #giftsRight{
+        height: auto;
+    }
    
 }
 
