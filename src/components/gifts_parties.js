@@ -34,8 +34,8 @@ export default props => {
                         <li>Tower of sixty macarons - $120</li>
                     </ul>
                 </div>
-                <div className="col l5 m4 s12">
-                    <img src={giftsPartiesBackground} className="giftsPartiesImg z-depth-1" />
+                <div className="col l5 m4 s12 valign-wrapper">
+                    <img src={giftsPartiesBackground} className="giftsPartiesImg" />
                 </div>
             </div>
         </div>

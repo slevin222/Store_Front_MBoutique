@@ -63,7 +63,7 @@ export default props => {
                     </div>
                 </div>
                 <div className="col l9 hide-on-med-and-down">
-                    <img src={ourMacaronsBackground} className="ourMacaronsImg z-depth-1" />
+                    <img src={ourMacaronsBackground} className="ourMacaronsImg" />
                 </div>
             </div>
             <div className="row">
