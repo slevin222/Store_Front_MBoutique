@@ -3,6 +3,7 @@ import Field from './contactFields.js';
 import FormErrors from './FormErrors.js';
 
 
+
 class ContactForm extends Component {
     constructor(props) {
         super(props);
@@ -12,11 +13,11 @@ class ContactForm extends Component {
                 phone: ' ',
                 email: ' ',
                 message: ' ',
-                formErrors: { name: '', phone: '', email: '', message: '' },
+                formErrors: { Name: '', Phone: '', Email: '', Message: '' },
                 nameValid: false,
                 phoneValid: false,
                 emailValid: false,
-                messageValid: false
+                messageValid: false,
             }
         };
 
@@ -32,11 +33,11 @@ class ContactForm extends Component {
                 phone: '',
                 email: '',
                 message: '',
-                formErrors: { name: '', phone: '', email: '', message: '' },
+                formErrors: { Name: '', Phone: '', Email: '', Message: '' },
                 nameValid: false,
                 phoneValid: false,
                 emailValid: false,
-                messageValid: false
+                messageValid: false,
 
             }
         });
@@ -64,20 +65,20 @@ class ContactForm extends Component {
         switch (fieldName) {
             case 'email':
                 emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-                fieldValidationErrors.email = emailValid ? '' : ' is invalid';
+                fieldValidationErrors.email = emailValid ? '' : ' is invalid. ';
                 break;
             case 'name':
-                nameValid = value.length >= 6;
-                fieldValidationErrors.name = nameValid ? '' : ' is too short';
+                nameValid = value.length > 1;
+                fieldValidationErrors.name = nameValid ? '' : ' must be entered. ';
                 break;
             case 'phone':
                 var phoneRegEx = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
                 phoneValid = value.match(phoneRegEx);
-                fieldValidationErrors.phone = phoneValid ? '' : ' is invalid';
+                fieldValidationErrors.phone = phoneValid ? '' : ' is invalid. ';
                 break;
             case 'message':
                 messageValid = value.length >= 15;
-                fieldValidationErrors.message = messageValid ? '' : ' is too short';
+                fieldValidationErrors.message = messageValid ? '' : ' is too short. ';
                 break;
             default:
                 break;
@@ -87,7 +88,8 @@ class ContactForm extends Component {
             emailValid: emailValid,
             nameValid: nameValid,
             phonelValid: phoneValid,
-            messageValid: messageValid
+            messageValid: messageValid,
+
         }, this.validateForm);
     }
 
@@ -108,23 +110,23 @@ class ContactForm extends Component {
                 nameValid: false,
                 phoneValid: false,
                 emailValid: false,
-                messageValid: false
+                messageValid: false,
             }
         });
 
     }
 
     render() {
-        const { name, message, phone, email, formErrors } = this.state.form;
+        const { name, message, phone, email, formErrors, displayModal } = this.state.form;
         return (
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
+                <FormErrors formErrors={formErrors} />
                 <Field id="name" name="name" label="Name" type="text" value={name} onChange={this.handleInputChange} />
                 <Field id="phone" name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
                 <Field id="email" name="email" label="Email" type="text" value={email} onChange={this.handleInputChange} />
                 <Field id="message" name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
                 <button type="submit" className="submitBtn btn waves-effect waves-light btn-medium light-blue darken-1">Submit</button>
                 <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.reset}>Clear</button>
-                <FormErrors formErrors={formErrors} />
             </form >
         );
     }
