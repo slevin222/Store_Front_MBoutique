@@ -31,7 +31,12 @@ class ContactForm extends Component {
                 name: '',
                 phone: '',
                 email: '',
-                message: ''
+                message: '',
+                formErrors: { name: '', phone: '', email: '', message: '' },
+                nameValid: false,
+                phoneValid: false,
+                emailValid: false,
+                messageValid: false
 
             }
         });
@@ -112,20 +117,15 @@ class ContactForm extends Component {
     render() {
         const { name, message, phone, email, formErrors } = this.state.form;
         return (
-
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
                 <Field id="name" name="name" label="Name" type="text" value={name} onChange={this.handleInputChange} />
                 <Field id="phone" name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
-                <Field id="email" name="email" label="Email" type="email" value={email} onChange={this.handleInputChange} />
+                <Field id="email" name="email" label="Email" type="text" value={email} onChange={this.handleInputChange} />
                 <Field id="message" name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
-                <div className="panel panel-default">
-                    <FormErrors formErrors={formErrors} />
-                </div>
                 <button type="submit" className="submitBtn btn waves-effect waves-light btn-medium light-blue darken-1">Submit</button>
                 <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.reset}>Clear</button>
-
+                <FormErrors formErrors={formErrors} />
             </form >
-
         );
     }
 }
