@@ -219,17 +219,17 @@ h4{
     background-color: rgb(73, 228, 12);
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), ;
-    display: none;
+
 }
 /* FOOTER CSS */
 
 .copyR{
-
+    padding-top: 4%;
     font-size: 1.5vmin;
 }
 
 .page-footer{
-    height: 14vh;
+    height: 110px;
     background-color:#df5277;
     padding-top: 2%;
 
@@ -265,9 +265,13 @@ p{
         font-size: 7vmin;
     }
     .order, .facebook,
-    .phone, .copyR{
+    .phone{
         margin-top:1%;
+        font-size: 4vmin;
+    }
+    .copyR{
         font-size: 3vmin;
+        padding-top:3%;
     }
     .page-footer{
         height: 16vh;
@@ -295,6 +299,18 @@ p{
     }
 }
 
+@media only screen and (min-width: 375px) and (max-width: 499px){
+    .order, .facebook,
+    .phone{
+        margin-top:1%;
+        font-size: 3vmin;
+    }
+    .copyR{
+        font-size:2vmin;
+        padding-top:2%;
+    }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 599px){
     #mobileNav{
         width: 50%;
@@ -312,9 +328,13 @@ p{
         font-size: 7vmin;
     }
     .order, .facebook,
-    .phone, .copyR{
+    .phone{
         margin-top:.5%;
         font-size: 2.3vmin;
+    }
+    .copyR{
+        font-size: 2vmin;
+        padding-top:2%;
     }
     .container{
         width: 90%;
@@ -337,7 +357,7 @@ p{
    
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) and (max-width: 699px){
     #mobileNav{
         width: 40%;
     }
@@ -359,7 +379,9 @@ p{
     h4{
         text-align: center;
     }
-   
+    .page-footer{
+        height: 80px;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1050px) {
@@ -379,9 +401,13 @@ p{
         font-size: 6vmin;
     }
     .order, .facebook,
-    .phone, .copyR{
+    .phone{
         margin-top:.5%;
         font-size: 2.2vmin;
+    }
+
+    .copyR{
+        font-size: 2vmin;
     }
     .page-footer{
         height: 14vh;

@@ -18,6 +18,7 @@ class ContactForm extends Component {
                 phoneValid: false,
                 emailValid: false,
                 messageValid: false,
+                submit: false
             }
         };
 
@@ -38,6 +39,8 @@ class ContactForm extends Component {
                 phoneValid: false,
                 emailValid: false,
                 messageValid: false,
+                submit: false,
+                formValid: false
 
             }
         });
@@ -84,17 +87,23 @@ class ContactForm extends Component {
                 break;
         }
         this.setState({
-            formErrors: fieldValidationErrors,
-            emailValid: emailValid,
-            nameValid: nameValid,
-            phonelValid: phoneValid,
-            messageValid: messageValid,
-
+            form: {
+                formErrors: fieldValidationErrors,
+                emailValid: emailValid,
+                nameValid: nameValid,
+                phonelValid: phoneValid,
+                messageValid: messageValid,
+            }
         }, this.validateForm);
     }
 
     validateForm() {
-        this.setState({ formValid: this.state.form.emailValid && this.state.form.nameValid && this.state.form.nameValid && this.state.form.messageValid });
+        this.setState({
+            form: {
+                formValid: this.state.form.emailValid && this.state.form.nameValid && this.state.form.nameValid && this.state.form.messageValid,
+                submit: true
+            }
+        });
     }
 
     handleSubmit(event) {
@@ -111,13 +120,16 @@ class ContactForm extends Component {
                 phoneValid: false,
                 emailValid: false,
                 messageValid: false,
+                submit: true
+
             }
         });
 
     }
 
     render() {
-        const { name, message, phone, email, formErrors, displayModal } = this.state.form;
+        const { name, message, phone, email, formErrors, displayModal, submit, formValid } = this.state.form;
+
         return (
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
                 <FormErrors formErrors={formErrors} />
@@ -127,7 +139,7 @@ class ContactForm extends Component {
                 <Field id="message" name="message" label="Message" type="text" value={message} onChange={this.handleInputChange} />
                 <button type="submit" className="submitBtn btn waves-effect waves-light btn-medium light-blue darken-1">Submit</button>
                 <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.reset}>Clear</button>
-                <i className="large material-icons messageSent z-depth-1">playlist_add_check</i>
+                <i style={{ opacity: submit ? 1 : 0 }} className="large material-icons messageSent z-depth-1">playlist_add_check</i>
             </form >
         );
     }
