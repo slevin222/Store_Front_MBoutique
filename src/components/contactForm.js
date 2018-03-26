@@ -11,6 +11,7 @@ class ContactForm extends Component {
                 phone: ' ',
                 email: ' ',
                 message: ' ',
+                errorMessage: '',
                 submit: false
             }
         };
@@ -26,6 +27,7 @@ class ContactForm extends Component {
                 phone: '',
                 email: '',
                 message: '',
+                errorMessage: '',
                 submit: false,
             }
         });
@@ -44,7 +46,6 @@ class ContactForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
         console.log('handleSubmit called, form values are:', this.state.form);
         this.setState({
             form: {
@@ -52,15 +53,17 @@ class ContactForm extends Component {
                 phone: '',
                 email: '',
                 message: '',
+                errorMessage: '',
                 submit: true
             }
         });
-    }
 
+    }
     render() {
-        const { name, message, phone, email, submit, } = this.state.form;
+        const { name, message, phone, email, submit, errorMessage } = this.state.form;
         return (
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
+                <div className="formErrors">{errorMessage}</div>
                 <Field id="name" name="name" label="Name" type="text" value={name} onChange={this.handleInputChange} />
                 <Field id="phone" name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
                 <Field id="email" name="email" label="Email" type="text" value={email} onChange={this.handleInputChange} />
