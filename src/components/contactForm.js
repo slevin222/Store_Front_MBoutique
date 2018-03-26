@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import Field from './contactFields.js';
+import { connect } from 'react-redux';
+import { reduxForm, Field } from 'redux-form';
+import { formInput } from '../helpers';
+
 
 
 class ContactForm extends Component {
@@ -11,7 +14,6 @@ class ContactForm extends Component {
                 phone: ' ',
                 email: ' ',
                 message: ' ',
-                errorMessage: '',
                 submit: false
             }
         };
@@ -27,7 +29,6 @@ class ContactForm extends Component {
                 phone: '',
                 email: '',
                 message: '',
-                errorMessage: '',
                 submit: false,
             }
         });
@@ -53,17 +54,16 @@ class ContactForm extends Component {
                 phone: '',
                 email: '',
                 message: '',
-                errorMessage: '',
                 submit: true
             }
         });
 
     }
     render() {
-        const { name, message, phone, email, submit, errorMessage } = this.state.form;
+        const { name, message, phone, email, submit } = this.state.form;
         return (
             <form className="col l6 s12" onSubmit={this.handleSubmit} >
-                <div className="formErrors">{errorMessage}</div>
+                <div className="formErrors"></div>
                 <Field id="name" name="name" label="Name" type="text" value={name} onChange={this.handleInputChange} />
                 <Field id="phone" name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange} />
                 <Field id="email" name="email" label="Email" type="text" value={email} onChange={this.handleInputChange} />
@@ -75,4 +75,31 @@ class ContactForm extends Component {
         );
     }
 }
-export default ContactForm
+
+function validate(values) {
+    const error = {};
+
+    if (!values.name) {
+        error.firstName = 'Please enter your Name.'
+    }
+
+    if (!values.email) {
+        error.email = 'Please enter a valid email.'
+    }
+
+    if (!values.message) {
+        error.message = 'Please enter a message'
+    }
+
+    if (values.phone) {
+        error.phone = 'Please enter a valid phone Number'
+    }
+
+    return error;
+}
+
+ContactForm = reduxForm({
+    validate: validate
+})(ContactForm);
+
+export default connect()(ContactForm);
