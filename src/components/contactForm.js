@@ -43,18 +43,24 @@ function validate(values) {
 
     if (!values.name) {
         error.firstName = 'Please enter your Name.'
+    } else if (values.name.length < 1) {
+        error.firstName = 'Please enter your Name.'
     }
-
     if (!values.email) {
-        error.email = 'Please enter a valid email.'
+        error.email = 'Please enter email address.'
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        error.email = 'Invalid email address'
     }
 
     if (!values.message) {
         error.message = 'Please enter a message'
+    } else if (values.message.length < 16) {
+        error.username = 'Must be at least 15 characters'
     }
-
     if (!values.phone) {
-        error.phone = 'Please enter a phone Number'
+        error.phone = 'Please enter a phone number'
+    } else if (/[^a-zA-Z0-9 ]/i.test(parseInt(values.phone))) {
+        error.phone = 'Please enter a valid phone number'
     }
 
     return error;
