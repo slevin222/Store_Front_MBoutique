@@ -42,9 +42,9 @@ function validate(values) {
     const error = {};
 
     if (!values.name) {
-        error.firstName = 'Please enter your Name.'
-    } else if (values.name.length < 1) {
-        error.firstName = 'Please enter your Name.'
+        error.name = 'Please enter your Name.'
+    } else if (values.name.length < 2 || !isNaN(values.name)) {
+        error.name = 'Please enter your Name.'
     }
     if (!values.email) {
         error.email = 'Please enter email address.'
@@ -59,8 +59,8 @@ function validate(values) {
     }
     if (!values.phone) {
         error.phone = 'Please enter a phone number'
-    } else if (/[^a-zA-Z0-9 ]/i.test(parseInt(values.phone))) {
-        error.phone = 'Please enter a valid phone number'
+    } else if (!/\d{3}-\d{3}-\d{4}/.test(values.phone)) {
+        error.phone = 'Please enter phone number with format 949-690-1076'
     }
 
     return error;
