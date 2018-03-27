@@ -24,6 +24,8 @@ class Form extends Component {
     render() {
         const submitted = this.props.submitSucceeded;
 
+        console.log('Props:', this.props);
+
         return (
             <form className="col l6 s12" onSubmit={this.props.handleSubmit(this.sendData)} >
                 <Field id="name" name="name" label="Name" type="text" component={this.renderInput} />
@@ -31,7 +33,7 @@ class Form extends Component {
                 <Field id="email" name="email" label="Email" type="text" component={this.renderInput} />
                 <Field id="message" name="message" label="Message" type="text" component={this.renderInput} />
                 <button type="submit" className="submitBtn btn waves-effect waves-light btn-medium light-blue darken-1">Submit</button>
-                <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.props.reset}>Clear</button>
+                <button type="button" className="btn waves-effect waves-light btn-small red accent-4" onClick={this.props.initialize}>Clear</button>
                 <i style={{ opacity: submitted ? 1 : 0 }} className="large material-icons messageSent z-depth-1">playlist_add_check</i>
             </form >
         );

@@ -95,12 +95,12 @@ nav ul li:hover{
 
 .daysmiddle{
     height: 25%;
-    padding-left: 3px;
+    padding-left:3%;
 }
 
 .daysbottom{
     height:25%;
-    padding-left: 3px;
+    padding: 4% 0 0 3%;
 }
 
 .daysText{
@@ -150,7 +150,7 @@ nav ul li:hover{
 
 .macaronsPicText{
     height: 45%;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 p{
@@ -253,7 +253,7 @@ p{
         width: 70%;
     }
     p{
-        font-size: 3.2vmin;
+        font-size: 3.1vmin;
     }
     li{
         font-size: 3.4vmin;
