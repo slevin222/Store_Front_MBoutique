@@ -55,7 +55,7 @@ function validate(values) {
     if (!values.message) {
         error.message = 'Please enter a message'
     } else if (values.message.length < 16) {
-        error.username = 'Must be at least 15 characters'
+        error.message = 'Must be at least 15 characters'
     }
     if (!values.phone) {
         error.phone = 'Please enter a phone number'
