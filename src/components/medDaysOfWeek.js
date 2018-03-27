@@ -84,16 +84,8 @@ class MedDaysOfWeek extends Component {
                 macImg1: caramel,
                 flavor2: "almond",
                 macImg2: almond
-            },
-            {
-                id: "everyday",
-                day: "1625 Post St.",
-                time: "CA 94115",
-                flavor1: "San Francisco",
-                macImg1: raspbery,
-                flavor2: "",
-                macImg2: violetcassis
             }
+
         ];
         const medSizedDays = daysOfWeek.map((item, index) => {
             return (
