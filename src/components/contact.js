@@ -33,7 +33,7 @@ class Contact extends Component {
                             <p className="pContactText">San Francisco. CA 94115</p>
                             <p className="pContactText">949-690-1076</p>
                             <div className="divider"></div>
-                            <p className="pContactText">order@mboutique.com</p>
+                            <p className="pContactText"><a>order@mboutique.com</a></p>
                             <p className="pContactText">Send us your questions, comments and flavor suggestions or place an order!</p>
                             <div className="divider"></div>
                         </div>

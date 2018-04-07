@@ -14,7 +14,7 @@ export default props => {
             <div className="row"></div>
             <div className="col s12" >
                 <h4>Our Macarons are freshly made by hand</h4>
-                <p>The vivid hues or our unique macarons reflect the natural flavors and essences that infuse the ganache filling of these delicious almond cookies - each has its own personality, and all of them are made to savour for their delicasy and unique character</p>
+                <p>The vivid hues or our unique macarons reflect the natural flavors and essences that infuse the ganache filling of these delicious almond cookies - each has its own personality, and all of them are made to savour for their delicasy and unique character.</p>
             </div>
 
             <div className="row">

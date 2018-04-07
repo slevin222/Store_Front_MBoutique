@@ -24,8 +24,6 @@ class Form extends Component {
     render() {
         const submitted = this.props.submitSucceeded;
 
-        console.log('Props:', this.props);
-
         return (
             <form className="col l6 s12" onSubmit={this.props.handleSubmit(this.sendData)} >
                 <Field id="name" name="name" label="Name" type="text" component={this.renderInput} />

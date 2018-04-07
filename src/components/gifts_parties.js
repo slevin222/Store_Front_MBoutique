@@ -13,8 +13,8 @@ export default props => {
             </div>
             <div className="row">
                 <div className="col s12">
-                    <h4>Let's eat Macarons!</h4>
-                    <p className="oueMacaronsPText">We make it easy to share la passion du macaron with your friends, family and colleagues. Choose from our array of premium gift options, or we can create a custom solution. Contact us when you need help planning your celebraion! orders@mboutique.com</p>
+                    <h4>Let's Eat Macarons!</h4>
+                    <p className="oueMacaronsPText">We make it easy to share la passion du macaron with your friends, family and colleagues. Choose from our array of premium gift options, or we can create a custom solution. Contact us when you need help planning your celebraion! <a>orders@mboutique.com.</a></p>
                 </div>
             </div>
             <div className="row">
