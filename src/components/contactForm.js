@@ -51,7 +51,6 @@ function validate(values) {
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
         error.email = 'Invalid email address'
     }
-
     if (!values.message) {
         error.message = 'Please enter a message'
     } else if (values.message.length < 16) {
@@ -59,10 +58,9 @@ function validate(values) {
     }
     if (!values.phone) {
         error.phone = 'Please enter a phone number'
-    } else if (!/\d{3}-\d{3}-\d{4}/.test(values.phone)) {
-        error.phone = 'Please enter phone number with format 949-690-1076'
+    } else if (!/\d{3}-?\d{3}-?\d{4}/g.test(values.phone)) {
+        error.phone = 'Please enter 9 digit phone number'
     }
-
     return error;
 }
 
