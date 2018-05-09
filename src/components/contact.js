@@ -11,10 +11,7 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="col s12" id="contactImage">
-                        <img src={contactImage} className="contactImg z-depth-1" />
-                    </div>
+                <div className="row s12 z-depth-1" id="contactImage" style={{ backgroundImage: "url(" + contactImage + ")" }}>
                 </div>
                 <div className="row">
                     <Form />

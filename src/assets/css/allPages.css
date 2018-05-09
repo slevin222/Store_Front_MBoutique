@@ -195,9 +195,12 @@ h4{
     color: red;
 }
 
-.contactImg{
-    margin: 1% 0 0 0;
-    width: 100%;
+#contactImage{
+    background-position: center;
+    background-size: cover;
+    height: 58vh;
+    margin: 1% 0 2% 0;
+    
 }
 
 .divider{
@@ -297,6 +300,9 @@ p{
     #giftsRight{
         height: auto;
     }
+    #contactImage{
+        height: 40vh;        
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 499px){
@@ -308,6 +314,9 @@ p{
     .copyR{
         font-size:2vmin;
         padding-top:2%;
+    }
+    #contactImage{
+        height: 40vh;        
     }
 }
 
@@ -354,7 +363,9 @@ p{
     #giftsRight{
         height: auto;
     }
-   
+    #contactImage{
+        height: 45vh;        
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 699px){
@@ -381,6 +392,9 @@ p{
     }
     .page-footer{
         height: 80px;
+    }
+    #contactImage{
+        height: 50vh;        
     }
 }
 
@@ -424,7 +438,9 @@ p{
     h4{
         text-align: left;
     }
-
+    #contactImage{
+        height: 50vh;        
+    }
 }
 
 @media only screen and (min-width: 1051px) and (max-width: 1190px) {
@@ -436,6 +452,9 @@ p{
     }
     h4{
         text-align: left;
+    }
+    #contactImage{
+        height: 50vh;        
     }
 }
 
@@ -451,5 +470,8 @@ p{
     }
     h4{
         text-align: left;
+    }
+    #contactImage{
+        height: 58vh;        
     }
 }
