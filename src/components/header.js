@@ -62,7 +62,7 @@ class Header extends Component {
         return (
             <nav>
                 <div className="nav-wrapper">
-                    <img src={logo} className="brand-logo" />
+                    <NavLink exact to='/'><img src={logo} className="brand-logo" /></NavLink >
                     <a href="#" className="right button-collapse" onClick={this.slideOutMenu}><i className="large material-icons pink-text text-darken-3">menu</i></a>
                     <ul className="right hide-on-med-and-down">
                         <li>
