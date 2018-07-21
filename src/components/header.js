@@ -95,7 +95,7 @@ class Header extends Component {
                             </li>
                             <img src={macarons} className="macaronsNav" />
                         </ul>
-                        <div onClick={this.returnMenu} className="drag-target" style={this.state.dragStyle} />
+                        <div onClick={this.returnMenu} style={this.state.dragStyle} />
                     </div>
                 </div>
             </nav >
