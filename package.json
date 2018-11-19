@@ -15,6 +15,9 @@
     "url": "https://github.com/Learning-Fuze/react_starter.git"
   },
   "dependencies": {
+    "deep-extend": "^0.6.0",
+    "forwarded": "^0.1.2",
+    "fresh": "^0.5.2",
     "materialize-css": "^0.100.2",
     "mime": "^2.3.1",
     "react": "^15.6.1",
